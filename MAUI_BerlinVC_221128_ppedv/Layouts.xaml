@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_BerlinVC_221128_ppedv.Layouts"
+             Title="Layouts">
+    <ScrollView>
+        <StackLayout Margin="10">
+
+            <Frame BorderColor="Black" Padding="5">
+
+                <StackLayout HeightRequest="400"
+                             Orientation="Vertical"
+                             Spacing="10">
+                    <Label Text="First"
+                           BackgroundColor="Red"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Sec"
+                           BackgroundColor="Green"
+                           VerticalOptions="Center"/>
+                    <Label Text="Thi"
+                           BackgroundColor="Yellow"
+                           VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Fou"
+                           BackgroundColor="Blue"
+                           VerticalOptions="EndAndExpand"/>
+                </StackLayout>
+                
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="5">
+                
+                <Grid HeightRequest="400"
+                      ColumnDefinitions="100, *">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    
+                    <Label Text="First"
+                           BackgroundColor="Red"
+                           Grid.Row="0"/>
+                    <Label Text="Sec"
+                           BackgroundColor="Green"
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+                    <Label Text="Thi"
+                           BackgroundColor="Yellow"
+                           Grid.Row="2"/>
+                    <Label Text="Fou"
+                           BackgroundColor="Blue"
+                           Grid.Row="3"
+                           Grid.ColumnSpan="2"/>
+                    <Label Text="Fiv"
+                           BackgroundColor="Orange"
+                           Grid.Column="1"/>
+                </Grid>
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="5">
+                <AbsoluteLayout HeightRequest="400">
+                    <Label Text="First"
+                           BackgroundColor="Red"
+                           AbsoluteLayout.LayoutFlags="All"
+                           AbsoluteLayout.LayoutBounds="0.3, 0.7, 0.3, 0.8"/>
+                    <Label Text="Sec"
+                           BackgroundColor="Green"
+                           AbsoluteLayout.LayoutFlags="None"
+                           AbsoluteLayout.LayoutBounds="200, 200, 150, 200"/>
+                    <Label Text="Thi"
+                           BackgroundColor="Yellow"
+                           AbsoluteLayout.LayoutFlags="PositionProportional"
+                           AbsoluteLayout.LayoutBounds="0.4, 0.2, 100, 100"/>
+                    <Label Text="Fou"
+                           BackgroundColor="Blue"/>
+                </AbsoluteLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="5">
+                
+                <FlexLayout HeightRequest="400"
+                            Direction="Row"
+                            Wrap="Wrap"
+                            AlignItems="Start"
+                            JustifyContent="SpaceEvenly"
+                            AlignContent="SpaceEvenly">
+
+                    <Label Text="First"
+                           BackgroundColor="Red"/>
+                    <Label Text="Sec"
+                           BackgroundColor="Green"
+                           WidthRequest="250"/>
+                    <Label Text="Thi"
+                           BackgroundColor="Yellow"
+                           WidthRequest="250"
+                           FlexLayout.AlignSelf="End"/>
+                    <Label Text="Fou"
+                           BackgroundColor="Blue"/>
+                    <Label Text="Sec"
+                           BackgroundColor="Orange"
+                           WidthRequest="250"/>
+                    <Label Text="Thi"
+                           BackgroundColor="Purple"/>
+                    <Label Text="Fou"
+                           BackgroundColor="Black"/>
+                    
+                </FlexLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
