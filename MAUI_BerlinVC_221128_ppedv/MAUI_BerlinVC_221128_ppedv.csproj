@@ -62,9 +62,15 @@
 	  <Compile Update="M03_Xaml-Grundlagen.xaml.cs">
 	    <DependentUpon>M03_Xaml-Grundlagen.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="M06_Resources_Styles.xaml.cs">
+	    <DependentUpon>M06_Resources_Styles.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Bindings\Bindings.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="M05_Layouts.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -74,7 +80,7 @@
 	  <MauiXaml Update="M03_Xaml-Grundlagen.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Resources_Styles.xaml">
+	  <MauiXaml Update="M06_Resources_Styles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

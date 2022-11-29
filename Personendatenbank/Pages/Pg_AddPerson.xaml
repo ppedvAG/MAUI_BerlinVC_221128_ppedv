@@ -85,12 +85,10 @@
               RowDefinitions="*,*,Auto,*">
 
             <Label x:Name="Lbl_Name"
-                   Text="Name:"
-                   VerticalOptions="Center"/>
+                   Text="Name:"/>
             <Entry x:Name="Ety_Name" 
                    Grid.Column="1"
                    Placeholder="z.B. Max Mustermann"
-                   Keyboard="Text"
                    Completed="Ety_Name_Completed"/>
 
             <Label x:Name="Lbl_Birthdate"
@@ -100,13 +98,11 @@
             <DatePicker x:Name="Dpr_Birthdate"
                         Grid.Row="1"
                         Grid.Column="1"
-                        Format="dd.MM.yyyy"
                         MinimumDate="01.01.1900"
                         DateSelected="Dpr_Birthdate_DateSelected"/>
 
             <Label x:Name="Lbl_Gender"
                    Grid.Row="2"
-                   VerticalOptions="Center"
                    Text="Geschlecht:"/>
             <Picker x:Name="Pkr_Gender"
                     Grid.Row="2"
@@ -122,7 +118,6 @@
 
             <Label x:Name="Lbl_Married"
                    Grid.Row="3"
-                   VerticalOptions="Center"
                    Text="Verheiratet:"/>
             <Switch x:Name="Swt_Married"
                     Grid.Row="3"
