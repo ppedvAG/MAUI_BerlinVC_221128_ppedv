@@ -68,10 +68,13 @@
 	  <Compile Update="M06_Resources_Styles.xaml.cs">
 	    <DependentUpon>M06_Resources_Styles.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Platforms\iOS\DeviceOrientatitionService.cs">
+	    <ExcludeFromCurrentConfiguration>false</ExcludeFromCurrentConfiguration>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AppShell.xaml">
+	  <MauiXaml Update="M08_Navi\AppShell.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="M07_Bindings\Bindings.xaml">
@@ -89,22 +92,25 @@
 	  <MauiXaml Update="M06_Resources_Styles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\FlyoutBsp\FlyoutBsp.xaml">
+	  <MauiXaml Update="M08_Navi\FlyoutBsp\FlyoutBsp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\FlyoutBsp\FlyoutPage1.xaml">
+	  <MauiXaml Update="M08_Navi\FlyoutBsp\FlyoutPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\NavPageBsp.xaml">
+	  <MauiXaml Update="M08_Navi\NavPageBsp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\RouteTargetPage.xaml">
+	  <MauiXaml Update="M08_Navi\RouteTargetPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\RoutingBsp.xaml">
+	  <MauiXaml Update="M08_Navi\RoutingBsp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Navi\TabbedPageBsp.xaml">
+	  <MauiXaml Update="M08_Navi\TabbedPageBsp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Plattformspezifika\Plattformspezfika.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

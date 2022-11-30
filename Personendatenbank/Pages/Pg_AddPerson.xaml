@@ -4,7 +4,7 @@
              xmlns:conv="clr-namespace:Personendatenbank.Converter"
              xmlns:model="clr-namespace:Personendatenbank.Model"
              x:Class="Personendatenbank.Pages.Pg_AddPerson"
-             Title="Pg_AddPerson">
+             Title="Neue Person">
 
     <!--Lab 03-->
     <!--<StackLayout Orientation="Vertical">
