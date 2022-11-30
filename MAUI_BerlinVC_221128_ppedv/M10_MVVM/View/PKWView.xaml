@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--vgl. M10_MVVM\ViewModel\BeispielViewModel und M10_MVVM\Model\PKW.cs-->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_BerlinVC_221128_ppedv.MVVM.View.PKWView"
+             xmlns:vm="clr-namespace:MAUI_BerlinVC_221128_ppedv.MVVM.ViewModel"
+             Title="PKWView">
+    
+    <!--Im View-Teil von MVVM-Projekten werden die Fenster per XAML definiert. Diese Klassen dürfen keinen Code-Behind
+    besitzen. Diese Aufgabe wird von dem entsprechenden ViewModel übernommen, welches als BindingContext des Views gesetzt
+    wird. Dies geschieht hier, im ersten Fenster des Programms, inner halb des XAML-Codes.-->
+    <ContentPage.BindingContext>
+        <vm:PKWViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <!--Die Eigenschaften werden über Kurzbindungen an den BindingContext (das ViewModel) gebunden.-->
+        <Entry Text="{Binding NeuerHersteller}" Placeholder="Hersteller"/>
+        <Entry Text="{Binding NeueMaxGeschwindigkeit}" Placeholder="Maximale Geschwindigkeit"/>
+        <DatePicker Date="{Binding NeuesJahr}"/>
+
+        <!--Commands ersetzen die Events. CommandParameter können beliebige zusätzliche Infos enthalten,
+            welche die Commands für ihre Ausführung benötigen-->
+        <Button Text="Hinzufügen" Command="{Binding AddCmd}"/>
+        <ListView x:Name="LstV_PKW"
+                  ItemsSource="{Binding PkwListe}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Hersteller}"/>
+                            <Label Text="{Binding MaxGeschwindigkeit}"/>
+                            <DatePicker Date="{Binding Herstellungjahr}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Löschen" Command="{Binding DeleteCmd}" CommandParameter="{Binding Source={x:Reference LstV_PKW}, Path=SelectedItem}"/>
+    </StackLayout>
+</ContentPage>

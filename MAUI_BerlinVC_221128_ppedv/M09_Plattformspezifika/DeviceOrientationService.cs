@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MAUI_BerlinVC_221128_ppedv.Plattformspezifika
 {
+    //Partielle gemeinsame Klassendefinition
+    //Implementierung findet Plattformspezifisch in den jeweiligen Plattform-Ordnern statt
     public partial class DeviceOrientationService
     {
         public partial DeviceOrientation GetOrientation();

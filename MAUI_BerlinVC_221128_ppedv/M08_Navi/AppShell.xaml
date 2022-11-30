@@ -7,8 +7,10 @@
        xmlns:bindings="clr-namespace:MAUI_BerlinVC_221128_ppedv.Bindings"
        xmlns:flyout="clr-namespace:MAUI_BerlinVC_221128_ppedv.Navi.FlyoutBsp"
        xmlns:os="clr-namespace:MAUI_BerlinVC_221128_ppedv.Plattformspezifika"
+       xmlns:mvvm="clr-namespace:MAUI_BerlinVC_221128_ppedv.MVVM.View"
        x:Class="MAUI_BerlinVC_221128_ppedv.Navi.AppShell"
        Title="AppShell">
+    
     <!--Die Shell bietet eine Routing-Navigation für alle angemeldeten Seiten (vgl. RoutingBsp.xaml)-->
     <!--FlyoutItems generieren ein Flyout-Menü, Tab und TabBar generieren eine Register-Navigation-->
 
@@ -52,7 +54,17 @@
     <FlyoutItem Title="M09_Plattformspezifika">
         <ShellContent Route="osspez"
                       Title="Plattformspezifika"
-                      ContentTemplate="{DataTemplate os:Plattformspezfika}"/>
+                      ContentTemplate="{DataTemplate os:Plattformspezifika}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="M10_MVVM">
+        <ShellContent Route="mvvm"
+                      Title="MVVM"
+                      ContentTemplate="{DataTemplate mvvm:PKWView}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="M11_Gesten">
+        <ShellContent Route="gestures"
+                      Title="Gesten"
+                      ContentTemplate="{DataTemplate local:Gestures}"/>
     </FlyoutItem>
 
 </Shell>

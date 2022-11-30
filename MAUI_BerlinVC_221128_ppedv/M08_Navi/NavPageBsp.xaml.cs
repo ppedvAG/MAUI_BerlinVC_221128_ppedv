@@ -16,4 +16,13 @@ public partial class NavPageBsp : ContentPage
     {
         Navigation.PushModalAsync(new Layouts());
     }
+
+    private void Button_Clicked_2(object sender, EventArgs e)
+    {
+        Page page = new McSubscriberPage();
+
+        MessagingCenter.Send(this, "nachricht", "HALLO");
+
+        Navigation.PushModalAsync(page);
+    }
 }

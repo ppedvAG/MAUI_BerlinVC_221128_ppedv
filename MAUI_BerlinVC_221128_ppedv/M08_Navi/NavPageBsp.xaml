@@ -6,5 +6,7 @@
     <VerticalStackLayout Margin="10">
         <Button Text="Open Bindings" Clicked="Button_Clicked"/>
         <Button Text="Open Layouts" Clicked="Button_Clicked_1"/>
+
+        <Button Text="Send Message" Clicked="Button_Clicked_2"/>
     </VerticalStackLayout>
 </ContentPage>
