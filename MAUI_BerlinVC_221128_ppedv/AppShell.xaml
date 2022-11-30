@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MAUI_BerlinVC_221128_ppedv"
+       xmlns:navi="clr-namespace:MAUI_BerlinVC_221128_ppedv.Navi"
+             x:Class="MAUI_BerlinVC_221128_ppedv.AppShell"
+             Title="AppShell">
+
+    <FlyoutItem Title="M03_Grundlagen">
+        <ShellContent Route="grundlagen"
+                      ContentTemplate="{DataTemplate local:XamlGrundlagen}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="M04_Controls">
+        <ShellContent Route="controls"
+                      ContentTemplate="{DataTemplate local:Controls}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="M05_Layouts">
+        <ShellContent Route="layouts"
+                      ContentTemplate="{DataTemplate local:Layouts}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="M08_Navigation"
+                Route="navi">
+        <ShellContent Title="Routing-Beispiel"
+                      ContentTemplate="{DataTemplate navi:RoutingBsp}"
+                      Route="route"/>
+        <ShellContent Title="NavigationPage"
+                      ContentTemplate="{DataTemplate navi:NavPageBsp}"
+                      Route="navigationpage"/>
+        <ShellContent Title="TabbedPage"
+                      ContentTemplate="{DataTemplate navi:TabbedPageBsp}"
+                      Route="tabbedpage"/>
+    </FlyoutItem>
+    
+</Shell>
