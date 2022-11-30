@@ -8,7 +8,13 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new Bindings.Bindings();
+		//MainPage = new Bindings.Bindings();
+
+		//MainPage = new NavigationPage(new Navi.NavPageBsp());
+
+		//MainPage = new Navi.TabbedPageBsp();
+
+		MainPage = new Navi.FlyoutBsp.FlyoutPage1();
 	}
 
     //Override der CreateWindow() um Zugriff auf globale shared Lifecycle-Events zu haben (für OS-spezifische LC-Events siehe MauiProgram.cs)

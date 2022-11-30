@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace MAUI_BerlinVC_221128_ppedv.Bindings
 {
+    //vgl. DoubleToColorConverter.cs
     class DoublesToColorConverter : IMultiValueConverter
     {
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)

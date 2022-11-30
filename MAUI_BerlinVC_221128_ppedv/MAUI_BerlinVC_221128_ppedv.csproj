@@ -53,6 +53,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="M07_Bindings\Bindings.xaml.cs">
+	    <DependentUpon>Bindings.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="M05_Layouts.xaml.cs">
 	    <DependentUpon>M05_Layouts.xaml</DependentUpon>
 	  </Compile>
@@ -68,7 +71,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Bindings\Bindings.xaml">
+	  <MauiXaml Update="M07_Bindings\Bindings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="M05_Layouts.xaml">
@@ -81,6 +84,18 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="M06_Resources_Styles.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Navi\FlyoutBsp\FlyoutBsp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Navi\FlyoutBsp\FlyoutPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Navi\NavPageBsp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Navi\TabbedPageBsp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

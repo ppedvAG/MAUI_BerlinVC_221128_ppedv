@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:main="clr-namespace:MAUI_BerlinVC_221128_ppedv"
+             x:Class="MAUI_BerlinVC_221128_ppedv.Navi.TabbedPageBsp"
+             Title="TabbedPageBsp">
+
+    <ContentPage Title="Test">
+        <Label Text="Test"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+    </ContentPage>
+
+    <main:XamlGrundlagen/>
+    <main:Controls/>
+    <main:Layouts/>
+
+</TabbedPage>

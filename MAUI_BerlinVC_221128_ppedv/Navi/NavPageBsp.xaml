@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_BerlinVC_221128_ppedv.Navi.NavPageBsp"
+             Title="NavPageBsp">
+    <VerticalStackLayout Margin="10">
+        <Button Text="Open Bindings" Clicked="Button_Clicked"/>
+        <Button Text="Open Layouts" Clicked="Button_Clicked_1"/>
+    </VerticalStackLayout>
+</ContentPage>
